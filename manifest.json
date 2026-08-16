@@ -1,6 +1,7 @@
 {
   "name": "WatchMe - Direktori & Informasi Anime",
   "short_name": "WatchMe",
+  "description": "Platform direktori dan informasi anime terbaik dengan pencarian global, jadwal, dan watchlist.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#111827",
@@ -8,7 +9,7 @@
   "icons": [
     {
       "src": "logo.svg",
-      "sizes": "512x512",
+      "sizes": "512x512 192x192",
       "type": "image/svg+xml"
     }
   ]
