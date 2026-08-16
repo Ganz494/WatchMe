@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Anime - WatchMe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">WATCHME</div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <nav style="display: flex; gap: 12px;">
+                <a href="index.html" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Beranda</a>
+                <a href="kategori.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Kategori</a>
+                <a href="jadwal.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Jadwal</a>
+                <a href="favorit.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Favorit ⭐</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 40px 20px; display: flex; flex-direction: column; gap: 40px;">
+        <div style="background: #1f2937; border: 1px solid #374151; padding: 30px; border-radius: 12px; display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+            <div style="flex: 0 0 250px;">
+                <img id="anime-img" src="" alt="Cover Anime" style="width: 100%; border-radius: 8px; object-fit: cover; height: 360px;">
+                <button id="favorite-btn" style="width: 100%; margin-top: 15px; background: #38bdf8; color: #111827; border: none; padding: 10px; border-radius: 6px; font-weight: bold; cursor: pointer;">⭐ Simpan ke Favorit</button>
+            </div>
+            <div style="flex: 1; min-width: 280px; color: #f3f4f6;">
+                <h1 id="anime-title" style="font-size: 28px; margin-bottom: 15px; color: #38bdf8;">Memuat judul...</h1>
+                <div id="anime-score" style="font-size: 16px; margin-bottom: 20px; font-weight: bold; color: #fbbf24;">⭐ Skor: -</div>
+                <h3 style="font-size: 18px; margin-bottom: 10px; border-bottom: 1px solid #374151; padding-bottom: 5px;">Sinopsis</h3>
+                <p id="anime-synopsis" style="line-height: 1.6; color: #d1d5db; font-size: 14px;">Memuat sinopsis...</p>
+            </div>
+        </div>
+
+        <!-- Rekomendasi Anime Serupa -->
+        <section>
+            <h2 style="color: #f3f4f6; margin-bottom: 20px;">Rekomendasi Anime Serupa</h2>
+            <div id="recommendation-grid" class="anime-grid"></div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #9ca3af; font-size: 12px; border-top: 1px solid #1f2937;">
+        <p>&copy; 2026 WatchMe. Seluruh data anime bersumber dari AniList API.</p>
+    </footer>
+
+    <script src="js/nonton.js"></script>
+</body>
+</html>

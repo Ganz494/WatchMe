@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Musim Ini - WatchMe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">WATCHME</div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <nav style="display: flex; gap: 12px;">
+                <a href="index.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Beranda</a>
+                <a href="kategori.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Kategori</a>
+                <a href="jadwal.html" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Jadwal</a>
+                <a href="favorit.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Favorit ⭐</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-area" style="width: 100%;">
+            <h2 id="schedule-title">Anime Sedang Tayang (Musim Ini)</h2>
+            <div id="anime-grid" class="anime-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WatchMe. Seluruh data anime bersumber dari AniList API.</p>
+    </footer>
+
+    <script src="js/jadwal.js"></script>
+</body>
+</html>

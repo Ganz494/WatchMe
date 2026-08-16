@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchMe - Platform Direktori Anime Terbaik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">WATCHME</div>
+        <div class="search-box" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+            <input type="text" id="search-input" placeholder="Cari anime...">
+            <button id="search-btn" style="background: #38bdf8; color: #111827; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-weight: bold;">Cari</button>
+            <button id="refresh-btn" style="background: #1f2937; color: #38bdf8; border: 1px solid #374151; padding: 8px 12px; border-radius: 6px; cursor: pointer;" title="Muat Ulang">🔄</button>
+            <button id="random-btn" style="background: #8b5cf6; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: bold;" title="Acak Anime">🎲 Acak</button>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <nav style="display: flex; gap: 12px;">
+                <a href="index.html" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Beranda</a>
+                <a href="kategori.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Kategori</a>
+                <a href="jadwal.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Jadwal</a>
+                <a href="favorit.html" style="color: #9ca3af; text-decoration: none; font-weight: 500;">Favorit ⭐</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-area">
+            <h2 id="section-title">Anime Trending & Terbaru</h2>
+            <div id="anime-grid" class="anime-grid"></div>
+        </section>
+        <aside class="sidebar-ads">
+            <div class="ad-box">
+                <p style="font-size: 12px; color: #888;">Iklan / Sponsor</p>
+                <div class="ad-placeholder">Ruang Iklan Banner</div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WatchMe. Seluruh data anime bersumber dari AniList API.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_category">Kategori Anime - WatchMe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">WATCHME</div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <button id="lang-btn" class="lang-btn">EN</button>
+            <nav>
+                <a href="index.html" data-i18n="nav_home">Beranda</a>
+                <a href="kategori.html" data-i18n="nav_category">Kategori</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="content-area">
+            <h2 data-i18n="cat_header" id="cat-title">Kategori & Genre Anime</h2>
+            <div id="genre-list" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px;">
+            </div>
+            <div id="anime-grid" class="anime-grid">
+            </div>
+        </section>
+
+        <aside class="sidebar-ads">
+            <div class="ad-box">
+                <p style="font-size: 12px; color: #888;" data-i18n="ads_label">Iklan / Sponsor</p>
+                <div class="ad-placeholder" data-i18n="ads_placeholder">Ruang Iklan Banner</div>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p data-i18n="footer_text">&copy; 2026 WatchMe. Seluruh data anime bersumber dari Jikan API / MyAnimeList. Platform direktori informasi mandiri dan legal.</p>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/kategori.js"></script>
+</body>
+</html>
